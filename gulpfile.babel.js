@@ -37,7 +37,7 @@ gulp.task('styles', function () {
    //     ignore: [/slick/]
    // }))
    .pipe(csscomb())
-   //.pipe($.minifyCss())
+   .pipe($.minifyCss())
    .pipe(gulp.dest('app/styles'))
    .pipe(gulp.dest('dist/styles'));
 });
@@ -193,7 +193,7 @@ gulp.task('sprites', () => {
    .pipe(gulp.dest('app/images/sprites/'));
 
  var cssStream = spriteData.css
-  // .pipe(csso())
+   //.pipe(csso())
    .pipe(gulp.dest('app/stylus/helpers/'));
 
  return merge(imgStream, cssStream);
