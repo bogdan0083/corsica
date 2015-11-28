@@ -47,6 +47,7 @@ $(document).ready(function() {
 
 		e.preventDefault();
 	});
+
 	$('.adventures__nav').on('click', 'a', function(e) {
 
 		var index = $('.adventures__nav li a').index($(this));
@@ -56,12 +57,16 @@ $(document).ready(function() {
    		if ($(this).hasClass('active')) {
    			return false;
    		}
-
    		$('.adventures__left_active').removeClass('adventures__left_active');
    		$('.adventures__nav li a.active').removeClass('active');
 
    		$(this).addClass('active');
    		adventures[index].classList.add('adventures__left_active');
+
+   		$('.adventures__left_active img').each(function(index, elem) {
+   			elem.src = elem.getAttribute("data-href");
+   		})
+
    		e.preventDefault();
     });
 
@@ -79,7 +84,7 @@ $(document).ready(function() {
     	$('.custom-select__option_hidden').removeClass('custom-select__option_hidden');
 
     	$(this).addClass('custom-select__option_hidden');
-    	
+
     	selected.text($(this).text());
 
     	$('.custom-select__options').toggleClass('custom-select__options_hidden');
