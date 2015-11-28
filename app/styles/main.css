@@ -597,7 +597,7 @@ a {
 }
 .topline__logo {
 	background-image: url("../images/sprites/sprites.png");
-	background-position: -438px -130px;
+	background-position: -526px -282px;
 	width: 143px;
 	height: 39px;
 	display: block;
@@ -780,7 +780,7 @@ a {
 	content: "";
 	position: absolute;
 	background-image: url("../images/sprites/sprites.png");
-	background-position: -499px -169px;
+	background-position: -621px -130px;
 	width: 40px;
 	height: 10px;
 	left: -55px;
@@ -793,7 +793,7 @@ a {
 	content: "";
 	position: absolute;
 	background-image: url("../images/sprites/sprites.png");
-	background-position: -539px -169px;
+	background-position: -621px -140px;
 	width: 41px;
 	height: 9px;
 	right: -55px;
@@ -905,7 +905,7 @@ a {
 	content: "";
 	position: absolute;
 	background-image: url("../images/sprites/sprites.png");
-	background-position: -468px -169px;
+	background-position: -570px -130px;
 	width: 31px;
 	height: 30px;
 	right: -5px;
@@ -999,6 +999,12 @@ a {
 	text-align: center;
 	margin-top: 30px;
 	font-size: 22px;
+	border: 1px solid #fff;
+	transition: 0.4s all;
+}
+.banner__apply:hover {
+	background-color: transparent;
+	color: #fff;
 }
 .gid {
 	margin-bottom: 78px;
@@ -1019,7 +1025,7 @@ a {
 .gid__block:after {
 	content: "";
 	background-image: url("../images/sprites/sprites.png");
-	background-position: -468px -169px;
+	background-position: -570px -130px;
 	width: 31px;
 	height: 30px;
 	right: 0;
@@ -1164,7 +1170,7 @@ a {
 	content: "";
 	position: absolute;
 	background-image: url("../images/sprites/sprites.png");
-	background-position: -438px -169px;
+	background-position: -570px -160px;
 	width: 30px;
 	height: 31px;
 }
@@ -1174,7 +1180,7 @@ a {
 	content: "";
 	position: absolute;
 	background-image: url("../images/sprites/sprites.png");
-	background-position: -468px -169px;
+	background-position: -570px -130px;
 	width: 31px;
 	height: 30px;
 }
@@ -1231,7 +1237,7 @@ a {
 .adventures__info {
 	float: left;
 	background-image: url("../images/sprites/sprites.png");
-	background-position: -581px -150px;
+	background-position: -600px -160px;
 	width: 16px;
 	height: 16px;
 	margin-left: 6px;
@@ -1321,25 +1327,25 @@ a {
 }
 .adventures__image_1 {
 	background-image: url("../images/sprites/sprites.png");
-	background-position: -438px 0;
+	background-position: -359px -260px;
 	width: 167px;
 	height: 130px;
 }
 .adventures__image_2 {
 	background-image: url("../images/sprites/sprites.png");
-	background-position: -271px -260px;
+	background-position: -526px 0;
 	width: 167px;
 	height: 130px;
 }
 .adventures__image_3 {
 	background-image: url("../images/sprites/sprites.png");
-	background-position: -271px -130px;
+	background-position: -359px -130px;
 	width: 167px;
 	height: 130px;
 }
 .adventures__image_4 {
 	background-image: url("../images/sprites/sprites.png");
-	background-position: -271px 0;
+	background-position: -359px 0;
 	width: 167px;
 	height: 130px;
 }
@@ -1393,7 +1399,7 @@ a {
 }
 .adventures__popup .adventures__popup-close {
 	background-image: url("../images/sprites/sprites.png");
-	background-position: -581px -130px;
+	background-position: -601px -130px;
 	width: 20px;
 	height: 20px;
 	display: block;
@@ -1477,7 +1483,7 @@ a {
 }
 .testimonials__arrow_left {
 	background-image: url("../images/sprites/sprites.png");
-	background-position: -499px -179px;
+	background-position: -624px -160px;
 	width: 8px;
 	height: 14px;
 	display: block;
@@ -1497,7 +1503,7 @@ a {
 }
 .testimonials__arrow_right {
 	background-image: url("../images/sprites/sprites.png");
-	background-position: -597px -150px;
+	background-position: -616px -160px;
 	width: 8px;
 	height: 14px;
 	display: block;
@@ -1545,7 +1551,7 @@ a {
 	content: "";
 	position: absolute;
 	background-image: url("../images/sprites/sprites.png");
-	background-position: -438px -169px;
+	background-position: -570px -160px;
 	width: 30px;
 	height: 31px;
 	left: 0;
@@ -1574,7 +1580,7 @@ a {
 	content: "";
 	position: absolute;
 	background-image: url("../images/sprites/sprites.png");
-	background-position: -468px -169px;
+	background-position: -570px -130px;
 	width: 31px;
 	height: 30px;
 	right: -60px;
@@ -1728,7 +1734,7 @@ a {
 	content: "";
 	position: absolute;
 	background-image: url("../images/sprites/sprites.png");
-	background-position: -468px -169px;
+	background-position: -570px -130px;
 	width: 31px;
 	height: 30px;
 	bottom: 0;
@@ -1791,7 +1797,7 @@ a {
 	content: "";
 	position: absolute;
 	background-image: url("../images/sprites/sprites.png");
-	background-position: -438px -169px;
+	background-position: -570px -160px;
 	width: 30px;
 	height: 31px;
 	left: 0;
@@ -1801,7 +1807,7 @@ a {
 	content: "";
 	position: absolute;
 	background-image: url("../images/sprites/sprites.png");
-	background-position: -468px -169px;
+	background-position: -570px -130px;
 	width: 31px;
 	height: 30px;
 	right: 0;
