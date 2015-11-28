@@ -1,0 +1,161 @@
+.topline
+	position absolute
+	z-index 10
+	width 100%
+	min-height 80px
+	padding-top 20px
+	&__in
+		width 1250px
+		margin 0 auto
+		clearfix()
+	&__logo
+		sprite($logo)
+		display block
+		float left
+		margin-top 15px
+	&__nav
+		float left
+		margin-left 165px
+		margin-top 25px
+	&__item
+		display inline-block
+	&__link
+		color silver
+		margin-right 22px	
+		display block
+		position relative
+		padding-bottom 5px
+		&:hover
+			color white
+			border-bottom 2px solid #ffd766
+	&__right
+		float right
+		margin-top 12px
+	&__contact
+		float left
+	&__num
+		calibri700()
+		font-size 21px
+		color white
+		display block
+	&__email
+		font-size 14px
+		color #ffd766
+		width 160px	
+		display block
+	&__or
+		calibrii400()
+		color white
+		display block
+		float left
+		margin-left 15px
+		height 36px
+		line-height 36px
+	&__apply
+		color white
+		display block
+		border 1px solid white
+		width 145px
+		height 36px
+		line-height 36px
+		font-size 16px
+		text-align center
+		float right
+		margin-left 15px
+		transition color, background-color 0.3s
+		&:hover
+			color black
+			background-color white
+.mega-slider
+	overflow hidden
+.mega-slide
+	height 650px
+	padding 160px 0 30px
+	position relative
+	text-align center
+	color white
+	&_1
+		background url('../images/slide-bg1.jpg') no-repeat 50% / cover
+	&_2
+		background url('../images/slide-bg2.jpg') no-repeat 50% / cover
+		.mega-slide__text
+			width 820px
+		.mega-slide__left
+			left 80px
+		.mega-slide__right
+			right 60px		
+	&_3
+		background url('../images/slide-bg3.jpg') no-repeat 50% / cover
+		.mega-slide__text
+			width 800px
+		.mega-slide__left
+			left 0
+		.mega-slide__right
+			right 90px		
+	&_4
+		background url('../images/slide-bg4.jpg') no-repeat 50% / cover
+		.mega-slide__text
+			width 950px
+		.mega-slide__left
+			left 50px
+		.mega-slide__right
+			right 70px	
+	&__heading
+		color #ffd766
+		calibri700()
+		text-transform uppercase
+		font-size 64px
+		margin-bottom 50px
+	&__text
+		width 700px
+		margin 0 auto
+		line-height 1.2
+		font-size 30px
+		margin-bottom 50px
+	&__btn
+		text-transform uppercase
+		font-size 18px
+		line-height 60px
+		height 60px
+		color white
+		padding 0 30px
+		display inline-block
+		calibri400()
+		border 2px solid white
+		transition color, background-color 0.3s
+		&:hover
+			color black
+			background-color white
+	&__left, &__right
+		position absolute
+		color white
+		font-size 16px
+		bottom 0
+		display block
+		&:hover
+			border-bottom 1px dotted white
+	&__arrows
+		position absolute
+		height 25px
+		width 550px
+		bottom 65px
+		left 50%
+		margin-left -(@width / 2)	
+	&__left
+		left 90px
+		&:nth-child(3)
+			left 0
+		&:after
+			content ''
+			position absolute
+			sprite($arrow_left)
+			left -55px
+			top 3px
+	&__right 
+		right 0
+		&:after
+			content ''
+			position absolute
+			sprite($arrow_right)
+			right -55px		
+			top 3px
