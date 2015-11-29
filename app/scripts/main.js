@@ -93,6 +93,12 @@ $(document).ready(function() {
         $('.walk__block_active').removeClass('walk__block_active');
 
         elem.className += ' walk__block_active';
+
+        if ($('.walk__block_active img').data("src")) {
+
+            var dataAttr = $('.walk__block_active img').data("src");
+            $('.walk__block_active img').attr("src", dataAttr);
+        }
     });
 
 
@@ -133,20 +139,25 @@ $(document).ready(function() {
             $('.topline').css({
                 'position': 'absolute',
                 'background-color': 'transparent',
-                'padding': '20px 0 0'
+                'padding': '20px 0 0',
+                'min-height': '80px'
             });
-
+            $('.topline__logo').removeClass("topline__logo_small");
+             $('.topline .topline__nav').css({
+                'margin-top': '16px'
+            });
         }
         if ($(document).scrollTop() >= $('#safari').offset().top) {
             $('.sticky-nav').slideDown();
             $('.topline').css({
                 'position': 'fixed',
                 'background-color': 'rgba(0,0,0, 0.8',
-                'padding': '20px 0 10px'
+                'padding': '7px',
+                'min-height': 'auto'
             });
             $('.topline .topline__logo').css({
-                'margin-top': '0'
-            });
+                'margin-top': '5px'
+            }).addClass('topline__logo_small');
 
             $('.topline .topline__right').css({
                 'margin-top': '0'
