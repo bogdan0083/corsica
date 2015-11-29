@@ -142,9 +142,14 @@ $(document).ready(function() {
                 'padding': '20px 0 0',
                 'min-height': '80px'
             });
-            $('.topline__logo').removeClass("topline__logo_small");
+            $('.topline__logo').css({
+                'margin-top': '15px'
+            }).removeClass("topline__logo_small");
              $('.topline .topline__nav').css({
-                'margin-top': '18px'
+                'margin-top': '22px'
+            });
+             $('.topline .topline__right').css({
+                'margin-top': '12px'
             });
         }
         if ($(document).scrollTop() >= $('#safari').offset().top) {
