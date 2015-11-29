@@ -96,7 +96,7 @@ $(document).ready(function() {
     // STICKY NAV
 
 
-    setTimeout(onScroll, 300);
+    setTimeout(onScroll, 100);
 
     $(document).ready(function() {
         $(document).on("scroll", onScroll);
