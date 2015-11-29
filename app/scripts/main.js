@@ -144,16 +144,16 @@ $(document).ready(function() {
             });
             $('.topline__logo').removeClass("topline__logo_small");
              $('.topline .topline__nav').css({
-                'margin-top': '16px'
+                'margin-top': '18px'
             });
         }
         if ($(document).scrollTop() >= $('#safari').offset().top) {
             $('.sticky-nav').slideDown();
             $('.topline').css({
                 'position': 'fixed',
-                'background-color': 'rgba(0,0,0, 0.8',
-                'padding': '7px',
-                'min-height': 'auto'
+                'background-color': 'rgba(0,0,0, 0.8)',
+                'padding': '10px 0 7px',
+                'min-height': '44px'
             });
             $('.topline .topline__logo').css({
                 'margin-top': '5px'
