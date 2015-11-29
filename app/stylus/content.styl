@@ -517,6 +517,22 @@
 		float left				
 	&__block
 		clear both
+		opacity 0
+		overflow hidden
+		height 0
+		transform translateY(-40px)
+		transition all 0.5s
+		&_active
+			height auto
+			opacity 1
+			transform translateY(0)
+		&_yacht
+			.walk__text
+				margin-bottom 25px
+			.walk__left:after
+				bottom 0
+			ul
+				margin-bottom 30px
 		clearfix()
 	&__left
 		float left
@@ -544,7 +560,7 @@
 		text-transform uppercase
 		font-size 20px
 	&__text
-		margin-bottom 35px	
+		margin-bottom 30px	
 	&__buy
 		line-height 50px
 		height 50px
@@ -552,10 +568,9 @@
 		color white
 		text-align center
 		font-size 22px
-		display block
-		width 352px		
+		display inline-block
+		padding 0 25px	
 		font-size 20px
-		text-transform uppercase	
 		border 1px solid #2c2c2c
 		transition all 0.4s
 		&:hover

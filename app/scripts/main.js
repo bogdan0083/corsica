@@ -80,16 +80,19 @@ $(document).ready(function() {
 
         var selected = $('.custom-select__selected');
 
+        var optionIndex = $(this).data('index');
+        var elem = $('.walk__block')[optionIndex];
 
         $('.custom-select__option_hidden').removeClass('custom-select__option_hidden');
 
         $(this).addClass('custom-select__option_hidden');
-
         selected.text($(this).text());
 
         $('.custom-select__options').toggleClass('custom-select__options_hidden');
 
+        $('.walk__block_active').removeClass('walk__block_active');
 
+        elem.className += ' walk__block_active';
     });
 
 
