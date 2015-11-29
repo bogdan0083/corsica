@@ -175,6 +175,7 @@
 	&__in
 		width 1250px
 		margin 0 auto
+		clearfix()
 	&__wrap
 		float right
 		width 450px
@@ -203,6 +204,7 @@
 		text-align center
 		border 1px solid #2c2c2c
 		transition all 0.4s
+		font-size 22px
 		&:hover
 			background-color white
 			color black
@@ -287,7 +289,9 @@
 			color white
 			background-color black
 	&__desc
-		height 240px
+		height 235px
+		padding-right 10px
+		overflow auto
 		ul
 			margin-left 30px
 			margin-bottom 20px
@@ -304,7 +308,13 @@
 					top 6px
 	&__text
 		color #3c3c3c
-		margin-bottom 15px		
+		margin-bottom 15px
+		&_italic
+			calibrii400()
+		&_underlined
+			text-decoration underline
+		&_bold
+			calibri700()		
 	&__nav
 		width 265px
 		height 505px
